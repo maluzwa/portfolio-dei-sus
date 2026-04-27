@@ -27,7 +27,7 @@
     background: #2C2416;
     display: flex; align-items: center; justify-content: center;
     font-family: 'EB Garamond', Georgia, serif;
-    overflow-y: auto;
+    overflow: auto;
     user-select: none;
   }
 
@@ -53,8 +53,8 @@
   /* ─── BOOK CONTAINER ─── */
   #book-container {
     position: relative;
-    width: min(900px, 96vw);
-    height: min(620px, 90vh);
+    width: min(940px, 98vw);
+    height: min(650px, 90vh);
     perspective: 2200px;
     display: flex;
     align-items: center;
@@ -121,6 +121,8 @@
     opacity: 0;
     transition: opacity 0.25s ease;
     overflow-y: auto;
+   overflow-x: hidden;
+   height: 100%
   }
   .page-content.active { opacity: 1; }
 
